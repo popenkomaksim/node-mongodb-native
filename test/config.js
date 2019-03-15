@@ -21,7 +21,8 @@ class NativeConfiguration extends ConfigurationBase {
   }
 
   usingUnifiedTopology() {
-    return !!process.env.MONGODB_UNIFIED_TOPOLOGY;
+    // return !!process.env.MONGODB_UNIFIED_TOPOLOGY;
+    return true;
   }
 
   start(callback) {
